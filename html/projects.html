@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Projects</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+
+
+
+
+.iphone:hover{transition: transform .4s ease;
+  transform: scale(1.1);
+}
+
+/* Add some content at the bottom of the video/page */
+
+/* Style the button used to pause/play the video */
+
+
+
+
+.android:hover{transition: transform .4s ease;
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card{
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.nav-link:hover{
+  color:black;
+}
+
+.feaimg{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+[class*="scrollable"] 
+{
+
+  
+  height: 400px;
+
+  overflow-y: scroll;
+
+
+}
+/* Image Zoom */
+#left img , #right img{
+  width:16px;
+  height:16px;
+}
+
+
+.carousel-control-prev , .carousel-control-next{
+
+
+height: 20%;
+margin: auto;
+width: 86px;
+
+}
+
+
+  .carousel-item img{
+ width: 100% ;
+    transform: scale(0.9);
+  transition: transform .3s ease;
+  border-radius: 20px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  transition: transform .3s ease;
+height: auto;
+  }
+
+
+
+/* [3] Finally, transforming the image when container gets hovered */
+.carousel-item img:hover {
+  transform: scale(1.0);
+
+}
+
+.carousel-indicators li{
+
+   width: 10px;
+  height: 10px;
+  border-radius: 100%;
+ background-color:black;
+}
+
+#left
+{width:40px;height: 40px;
+  margin-left: -50px;
+}
+
+
+#right
+{width:40px;height: 40px;
+  margin-right: -50px;
+}
+
+
+@media screen and (max-width: 576px)
+{
+[class*="123"]  {
+        display: none;
+  }
+.feaimg{
+  display: none;
+}
+
+#left{
+  margin-left: 0px;
+}
+
+#right{
+  margin-right: 0px;
+}
+
+.carousel-item img:hover {
+  transform: scale(0.9);
+}
+#demo{
+  margin-top: -50px;
+} 
+}
+</style>
+
+
+</head>
+<body>
+
+
+<script >
+// Get the video
+var video = document.getElementById("myVideo");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+// Pause and play the video, and change the button text
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+
+
+
+  <!--Navigation Bar-->
+<nav class="navbar navbar-expand-xl bg-light navbar-light fixed-top" >
+  <a class="navbar-brand pl-sm-3" href="index.html" id="namee" ><kbd>#</kbd> V I Z A R D</a>
+
+  <button class="navbar-toggler pr-sm-3"  type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+ 
+
+  <div class="collapse navbar-collapse  justify-content-end pr-sm-2 " id="collapsibleNavbar">
+        
+    <ul class="navbar-nav">
+
+
+       
+     
+
+ <li class="nav-item " style="margin-right: 20px">
+        <a class="nav-link  " href="index.html" active>Home</a>
+      </li>
+     
+
+
+      <li class="nav-item " style="margin-right: 20px">
+        <a class="nav-link  " href="portfolio.html" active>Portfolio</a>
+      </li>
+     
+      <li class="nav-item" style="margin-right: 20px">
+        <a class="nav-link active" href="projects.html">Projects</a>
+      </li> 
+       
+   </ul>
+  </div>   
+</nav>
+
+
+
+
+
+
+
+
+
+
+<div  style="margin-top: 70px" >
+      
+
+
+   
+      <br>
+     <div id="demo" class="carousel slide container " data-ride="carousel" >
+ 
+                       
+                        <ul class="carousel-indicators" style="margin-bottom:  -25px" >
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                            <li data-target="#demo" data-slide-to="2"></li>
+                        </ul>
+
+                        <!-- Carousel items -->
+                        <div class="carousel-inner" >
+
+                            <div class="carousel-item active">
+                                <div class="row">
+                                  <div class="col-md-3">
+                                          
+
+
+                                        <a href="#">
+                                          <img  src="../images/l1.png" alt="login" ></a>
+                                    </div>
+                                    <div class="col-md-3 123">  
+                                        <a href="#">
+                                        <img  src="../images/l2.png" alt="login" >
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 123">
+                                        <a href="#">
+                                       <img  src="../images/l3.png" alt="login" >
+                                        </a>
+                                    </div>
+                                     <div class="col-md-3 123">
+                                        <a href="#">
+                                       <img  src="../images/l4.png" alt="login" >
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                             <img  src="../images/h1.png" alt="home" >
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 123">
+                                        
+
+                                        <a href="#">
+                                             <img  src="../images/h2.png" alt="home" >
+                                        </a>
+                                    </div>
+                                   
+                                    <div class="col-md-3 123">
+                                        <a href="#">
+                                             <img  src="../images/h3.png" alt="home" >
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 123">
+                                        <a href="#">
+                                             <img  src="../images/h4.png" alt="home" >
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+
+                           
+                            <!--.item-->          
+                              <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                             <img  src="../images/u1.png" alt="upload" >
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 123">
+                                        
+
+                                        <a href="#">
+                                             <img  src="../images/u2.png" alt="upload" >
+                                        </a>
+                                    </div>
+                                   
+                                    <div class="col-md-3 123">
+                                        <a href="#">
+                                             <img  src="../images/u3.png" alt="upload" >
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 123">
+                                        <a href="#">
+                                             <img  src="../images/u4.png" alt="upload" >
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+ 
+
+                              <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                             <img  src="../images/p1.png" alt="profile" >
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 123">
+                                        
+
+                                        <a href="#">
+                                             <img  src="../images/p2.png" alt="profile" >
+                                        </a>
+                                    </div>
+                                   
+                                    <div class="col-md-3 123">
+                                        <a href="#">
+                                             <img  src="../images/p3.png" alt="profile" >
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 123">
+                                        <a href="#">
+                                             <img  src="../images/p4.png" alt="profile" >
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+
+
+                              <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                             <img  src="../images/c1.png" alt="contest" >
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 123">
+                                        
+
+                                        <a href="#">
+                                             <img  src="../images/c2.png" alt="contest" >
+                                        </a>
+                                    </div>
+                                   
+                                    <div class="col-md-3 123">
+                                        <a href="#">
+                                             <img  src="../images/c3.png" alt="contest" >
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 123">
+                                        <a href="#">
+                                             <img  src="../images/c4.png" alt="contest" >
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+
+                             <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                             <img  src="../images/s1.png" alt="settings" >
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 123">
+                                        
+
+                                        <a href="#">
+                                             <img  src="../images/s2.png" alt="settings" >
+                                        </a>
+                                    </div>
+                                   
+                                    <div class="col-md-3 123">
+                                        <a href="#">
+                                             <img  src="../images/s3.png" alt="settings" >
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 123">
+                                        <a href="#">
+                                             <img  src="../images/s4.png" alt="settings" >
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+
+
+
+
+
+
+
+
+
+
+                            
+                            </div>
+                            <a id="left" class="carousel-control-prev" href="#demo" data-slide="prev">
+    <img src="../images/left.png" alt="right">
+  </a>
+  <a id="right" class="carousel-control-next" href="#demo" data-slide="next">
+   <img src="../images/right.png" alt="right">
+  </a>
+           
+
+                        </div>
+                        <!--.carousel-inner--> <!-- Left and right controls -->
+           </div>
+                    <!--.Carousel-->
+ 
+
+           
+
+
+
+<br>
+<div style="text-align: center;margin-top: 40px" ><h1 >Too-Day<small> <pre>" A Social Community App. "</pre></small> </h1></div>
+<br>
+<div class="container  ">
+<div class="card-deck ml-md-2 mr-md-2">
+  <div class="card border-0" style="border-radius: 25px">
+   <div class="card-body bg-dark " style=" border-top-left-radius: 25px; border-top-right-radius: 25px;">
+      <h4 class="card-title text-center" style="color: white">Main Problem</h4>
+      
+      
+    </div>
+    <div class="card-text p-4  scrollable "  style=" border-bottom-left-radius: 25px; border-bottom-right-radius: 25px;" >
+  <strong> In Today’s Generation,</strong><p style="font-family: arial">
+
+We all are connected to each other through social networking apps, and always stay up to date about the things that are<strong> Happening around us</strong> through news channel, newspapers or from some Fellow Friends.<br>
+<strong>But is it true, </strong>
+For example, do you really know the people who lives in your city, or the latest things that are going on around you ,in your city ?<br>
+According to a survey we found out that, 70% people are not aware about there city, and has to face alot of complications.
+<strong>For instance</strong>, one of my friend lost his dog few days back. He tried his level best to look for his dog, but he wasn’t able to make it and finally, at the end he left the hope. <strong>This is just one instance </strong>there are much more like this road blocks, special events, accidents, robberies , weather, transport etc. 
+Which happen in our city on a daily basis and we are not aware about them.<br> <strong>So,</strong> We decided to make a digital platform, where people can come and know about the latest feeds happening in their city instantly or a community, where people can share text ,videos, photos or opinions with their city mates. As this will assist them to know more about their surrounding or to work as a community.<p>
+</div>
+  </div>
+<div class="card border-0 " style="border-radius: 25px">
+   <div class="card-body " style=" border-top-left-radius: 25px; border-top-right-radius: 25px;background-color: #E65100" >
+      <h4 class="card-title text-center"  style="color: white">Our Solution</h4>
+      
+      
+    </div>
+    <div class="card-text p-4 scrollable " style=" border-bottom-left-radius: 25px; border-bottom-right-radius: 25px;" >
+ <strong>Too-Day,</strong> <br>
+
+Is an online Social Community App, which help local people of a city to share information (Photo, Video, Text or Opinions) with each other.<br>
+<strong>In addition to that,</strong> there is no need of sending requests, a person who is living in whichever city will automatically get connected to that city page with a connection to all the city members and that’s just by a single click.<br>
+<strong>What’s more ,</strong> If a user moves from one city to another , He will be directly linked to that city page.
+Thus, he will always stay <strong>Up-to-Date</strong> about the things that are happening in the city or around him, and can also contribute by uploading Content related to that city.
+<strong>Moreover,</strong> People have full rights to like, dislike, comment or report any feed, which help us to prioritize the feed on Too-day, and if any feed is reported abusive or violent our team instantly react to that post and block that user from posting any content on <strong>Too-day</strong> thus maintaining Privacy.
+</div>
+
+
+
+</div></div>
+
+<br><br>
+<!-- Features -->
+<div class="container">
+  <h2 style="text-align:center;">Features <small>v.1.0</small></h2>
+  <br>
+  <!-- Nav pills -->
+  <ul class="nav nav-pills justify-content-center" role="tablist" >
+    
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="pill" href="#Feature1">Feature 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#Feature2">Feature 2</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#Feature3">Feature 3</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#Feature4">Feature 4</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#Feature5">Feature 5</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#Feature6">Feature 6</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#Feature7">Feature 7</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#Feature8">Feature 8</a>
+    </li>
+   <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#Feature9">Feature 9</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="Feature1" class="container tab-pane active"><br>
+
+
+
+<div class="card-deck row justify-content-center" >
+
+  <div class="card bg-light col-md-4 " style="text-align: center; padding: 6vw 0;">
+    <div class="card-body text-left "  >
+      <ul style="list-style-type:none;"><h3 >Easy to login with few Clicks.</h3><br>
+
+<li> <strong>-</strong> Enter Mobile Number</li>
+<li > <strong>-</strong> OTP </li>
+<li  > <strong>-</strong> Location</li>
+</ul>
+    </div>
+  </div>
+
+  <div class="border-0 col-md-3 ">
+    <div class="card-body  text-center p-0">
+     <img class="feaimg" src="../images/l1.png" style="width: 100%;height: auto;  ">
+    </div>
+  </div>
+
+
+</div>
+
+
+
+    </div>
+    <div id="Feature2" class="container tab-pane fade"><br>
+      <div class="card-deck row justify-content-center" >
+
+  <div class="card bg-light col-md-4 " style="text-align: center; padding: 6vw 0;">
+    <div class="card-body text-left "  >
+      <h3 >Automatically connects 
+people to their City Page 
+on login.
+</h3><br>
+
+<p><strong>-</strong> No need of sending friend request anymore.</p>
+
+
+    </div>
+  </div>
+
+  <div class="border-0 col-md-3 ">
+    <div class="card-body  text-center p-0">
+     <img class="feaimg" src="../images/l4.png" style="width: 100%;height: auto;  ">
+    </div>
+  </div>
+
+
+</div>
+    </div>
+    <div id="Feature3" class="container tab-pane fade"><br>
+      <div class="card-deck row justify-content-center" >
+
+  <div class="card bg-light col-md-4 " style="text-align: center; padding: 6vw 0;">
+    <div class="card-body text-left "  >
+      <h3 >Instant 24hrs news feed.</h3><br>
+
+<p> <strong>-</strong> 
+So that, people always stay updated about the latest things going around, in their city, on a daily basis
+</p>
+
+    </div>
+  </div>
+
+  <div class="border-0 col-md-3 ">
+    <div class="card-body  text-center p-0">
+     <img class="feaimg" src="../images/h2.png" style="width: 100%;height: auto;  ">
+    </div>
+  </div>
+
+
+</div>
+    </div>
+    <div id="Feature4" class="container tab-pane fade"><br>
+     <div class="card-deck row justify-content-center" >
+
+  <div class="card bg-light col-md-4 " style="text-align: center; padding: 6vw 0;">
+    <div class="card-body text-left "  >
+      <h3 >Changing city according to location.</h3><br>
+
+<p> <strong>-</strong> As user move to a new city, he will be directly linked to that City page.</p>
+
+    </div>
+  </div>
+
+  <div class="border-0 col-md-3 ">
+    <div class="card-body  text-center p-0">
+     <img class="feaimg" src="../images/h1.png" style="width: 100%;height: auto;  ">
+    </div>
+  </div>
+
+
+</div>
+    </div>
+    <div id="Feature5" class="container tab-pane fade"><br>
+     <div class="card-deck row justify-content-center" >
+
+  <div class="card bg-light col-md-4 " style="text-align: center; padding: 4vw 0;">
+    <div class="card-body text-left "  >
+    <ul style="list-style-type:none;">  <h3 >User have been privileged with full rights to,</h3><br>
+
+<li> <strong>-</strong> Post</li>
+<li > <strong>-</strong>Write Reviews  </li>
+<li  > <strong>-</strong> Report any feed</li>
+</ul>
+    </div>
+  </div>
+
+  <div class="border-0 col-md-3 ">
+    <div class="card-body  text-center p-0">
+     <img class="feaimg" src="../images/p2.png" style="width: 100%;height: auto;  ">
+    </div>
+  </div>
+
+
+</div>
+    </div>
+    <div id="Feature6" class="container tab-pane fade"><br>
+     <div class="card-deck row justify-content-center" >
+
+  <div class="card bg-light col-md-4 " style="text-align: center; padding: 4vw 0;">
+    <div class="card-body text-left "  >
+      <ul style="list-style-type:none;"><h3 >A Filter 
+
+To see a specific type of Content, in the News feed.
+</h3><br>
+
+<li> <strong>-</strong> Video</li>
+<li > <strong>-</strong> Near by </li>
+<li  > <strong>-</strong> Opinion</li>
+</ul>
+    </div>
+  </div>
+
+  <div class="border-0 col-md-3 ">
+    <div class="card-body  text-center p-0">
+     <img class="feaimg" src="../images/h3.png" style="width: 100%;height: auto;  ">
+    </div>
+  </div>
+
+
+</div>
+    </div>
+    <div id="Feature7" class="container tab-pane fade"><br>
+     <div class="card-deck row justify-content-center" >
+
+  <div class="card bg-light col-md-4 " style="text-align: center; padding: 6vw 0;">
+    <div class="card-body text-left "  >
+  <h3 >Every user has its own profile.</h3><br>
+
+<p> <strong>-</strong> With his personal Information, rating, Contests and reviews.</p>
+
+    </div>
+  </div>
+
+  <div class="border-0 col-md-3 ">
+    <div class="card-body  text-center p-0">
+     <img class="feaimg" src="../images/p1.png" style="width: 100%;height: auto;  ">
+    </div>
+  </div>
+
+
+</div>
+    </div>
+    <div id="Feature8" class="container tab-pane fade"><br>
+      <div class="card-deck row justify-content-center" >
+
+  <div class="card bg-light col-md-4 " style="text-align: center; padding: 6vw 0;">
+    <div class="card-body text-left "  >
+      <h3 >Privacy
+.</h3><br>
+
+<p> <strong>-</strong> A user Profile can only be seen by his/her city mates.
+Thus, maintaining privacy.
+</p>
+
+    </div>
+  </div>
+
+  <div class="border-0 col-md-3 ">
+    <div class="card-body  text-center p-0">
+     <img class="feaimg" src="../images/s3.png" style="width: 100%;height: auto;  ">
+    </div>
+  </div>
+
+
+</div>
+    </div>
+    <div id="Feature9" class="container tab-pane fade"><br>
+      <div class="card-deck row justify-content-center" >
+
+  <div class="card bg-light col-md-4 " style="text-align: center; padding: 6vw 0;">
+    <div class="card-body text-left "  >
+      <h3 >Contest's for City.</h3><br>
+
+<p> <strong>-</strong> To keep the city and The App happening.</p>
+
+    </div>
+  </div>
+
+  <div class="border-0 col-md-3 ">
+    <div class="card-body  text-center p-0">
+     <img class="feaimg" src="../images/c3.png" style="width: 100%;height: auto;  ">
+    </div>
+  </div>
+
+
+</div>
+    </div>
+  </div>
+</div>
+</div>
+
+<br>
+<div class="container-fluid">
+<div class="row bg-light" >
+
+
+
+
+
+  <div class="col-md-3" >
+  <video class=" mx-auto d-block" autoplay muted loop id="myVideo" style="width: 60%;"  >
+  <source src="../images/aaa.mp4" type="video/mp4">
+</video>
+  </div>
+
+
+
+  <div class="col-md-5 text-center" style="margin-top: 45px;">
+    <h3>We are Currently Available on....</h3>
+
+  </div>
+
+
+
+
+
+  <div class="col-md-2 text-center" style="margin-top: 40px;">
+   <a  href="https://play.google.com/store?hl=en" target="_blank" style="background: none;border: none;"> <img class="iphone" src="../images/di.png" style="width:80%;border-radius: 13px">
+  </div></a>
+
+  <div class="col-md-2 text-center" style="margin-top: 40px;">
+  <a  href="https://www.apple.com/in/ios/app-store/" target="_blank" style="background: none;border: none;"> <img class="android" src="../images/da.png" style="width:80%;border-radius: 13px"></a>
+  </div>
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
